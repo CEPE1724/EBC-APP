@@ -1,5 +1,6 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import {CarritoScreen} from "../screens/CarritoScreen";
+import {UsersScreen} from "../screens/UsersScreen/UsersScreen";
 import { screen } from "../utils";
 import HeaderIcons from "../components/HeaderIcons";
 const Stack = createNativeStackNavigator();
@@ -21,7 +22,13 @@ export function CarritoStack() {
           ),
           }}
       />
+      <Stack.Screen
+        name={screen.user.users} // Nombre de la nueva pantalla
+        component={UsersScreen}
+        options={{ title: "User Screen" }}
+      />
      
     </Stack.Navigator>
   );
 }
+

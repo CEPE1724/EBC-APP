@@ -2,10 +2,9 @@ import React from "react";
 import { View, Text } from "react-native";
 
 export function CarritoScreen() {
-    return (
-        <View>
-        <Text>Carrito Screen</Text>
-        </View>
-    );
-    }
-    
+  return (
+    <View>
+      <Text>Carrito Screen</Text>
+    </View>
+  );
+}

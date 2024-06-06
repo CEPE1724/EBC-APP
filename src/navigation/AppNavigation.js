@@ -6,6 +6,7 @@ import {TiendaStack } from "./TiendaStack"
 import {ListaDeseoStack} from "./ListaDeseoStack"
 import { RadarStack } from "./RadarStack";
 import { screen } from "../utils/screenName";
+import {UsersScreen} from "../screens/UsersScreen/UsersScreen"
 
 const Tab = createBottomTabNavigator();
 

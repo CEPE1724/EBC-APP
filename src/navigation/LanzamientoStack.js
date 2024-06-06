@@ -23,7 +23,7 @@ export function LanzamientoStack(props) {
         name={screen.lanzamiento.lanzamientos}
         component={LanzamientoScreen}
         options={{
-          title: "Lanzamientosss",
+          title: "Lanzamientossskk",
           headerRight: () => (
             <HeaderIcons
               showSearch={true}

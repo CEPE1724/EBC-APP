@@ -2,8 +2,10 @@
 import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { View } from 'react-native';
-
-const HeaderIcons = ({ showSearch, showSettings, onSearchPress, onSettingsPress }) => {
+import { useNavigation } from '@react-navigation/native';
+import { screen } from "../utils/screenName"; 
+const HeaderIcons = ({ showSearch, showSettings, onSearchPress }) => {
+  const navigation = useNavigation();
   return (
     <View style={{ flexDirection: 'row' }}>
       {showSearch && (
@@ -21,7 +23,7 @@ const HeaderIcons = ({ showSearch, showSettings, onSearchPress, onSettingsPress 
           size={25}
           backgroundColor="white"
           color="black"
-          onPress={onSettingsPress}
+          onPress={() => navigation.navigate(screen.user.users)} // Usar la ruta correcta
         />
       )}
     </View>
